@@ -10,10 +10,10 @@
     <style>
         .center_div{
             margin: 0 auto;
-            width:80% /* value of your choice which suits your alignment */
+            width:80% 
         }
     </style>
-    <title>Credit Card Apply</title>
+    <title>Credit Card Application Form</title>
   </head>
   <body>
     <div class="container center_div">
@@ -82,7 +82,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                        Recive new information
+                        Recive new survey for credit card application 
                     </label>
                 </div>
             </div>
@@ -102,7 +102,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-            $("input#zipCode").keypress(function(e) {
+            $("input#zipCode","input#age").keypress(function(e) {
                 //if the letter is not digit then display error and don't type anything
                 if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
                     return false;
